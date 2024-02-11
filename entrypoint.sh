@@ -8,3 +8,5 @@ uname -m
 export INTERNAL_IP=`ip route get 1 | awk '{print $NF;exit}'`
 curl -Lo ./globed-game-server-x64 https://github.com/dankmeme01/globed2/releases/download/v${VERSION}/globed-game-server-x64
 chmod +x ./globed-game-server-x64
+
+CMD ["/bin/bash", "/entrypoint.sh"]
