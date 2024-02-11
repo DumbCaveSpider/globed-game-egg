@@ -9,4 +9,9 @@ export INTERNAL_IP=`ip route get 1 | awk '{print $NF;exit}'`
 curl -Lo ./globed-game-server-x64 https://github.com/dankmeme01/globed2/releases/download/v${VERSION}/globed-game-server-x64
 chmod +x ./globed-game-server-x64
 
-CMD ["/bin/bash", "/entrypoint.sh"]
+# Replace Startup Variables
+MODIFIED_STARTUP=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
+echo ":/home/container$ ${MODIFIED_STARTUP}"
+
+# Run the Server
+${MODIFIED_STARTUP}
