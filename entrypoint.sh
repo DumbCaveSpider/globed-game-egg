@@ -10,4 +10,4 @@ curl -Lo ./globed-game-server-x64 https://github.com/dankmeme01/globed2/releases
 chmod +x ./globed-game-server-x64
 
 # Run the Server
-./globed-game-server-x64 ${IP_ADDRESS} ${CENTRAL_DOMAIN}
+./globed-game-server-x64
