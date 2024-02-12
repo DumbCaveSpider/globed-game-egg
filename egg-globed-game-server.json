@@ -7,7 +7,7 @@
     "exported_at": "2024-02-12T14:41:02+08:00",
     "name": "Globed Game Server",
     "author": "admin@arcticwoof.com",
-    "description": null,
+    "description": "Globed is an open-source, highly customizable multiplayer mod for Geometry Dash powered by Geode. (Central Server)",
     "features": null,
     "docker_images": {
         "quay.io\/arcticwoof\/globed-game:latest": "quay.io\/arcticwoof\/globed-game:latest"
