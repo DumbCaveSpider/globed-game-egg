@@ -6,8 +6,8 @@
     },
     "exported_at": "2024-02-12T14:41:02+08:00",
     "name": "Globed Game Server",
-    "author": "pterodactyl@arcticwoof.xyz",
-    "description": "Globed is an open-source, highly customizable multiplayer mod for Geometry Dash powered by Geode. (Game Server)",
+    "author": "admin@arcticwoof.com",
+    "description": null,
     "features": null,
     "docker_images": {
         "quay.io\/arcticwoof\/globed-game:latest": "quay.io\/arcticwoof\/globed-game:latest"
@@ -40,7 +40,7 @@
         },
         {
             "name": "Globed Version",
-            "description": "The version of Globed",
+            "description": "The version of Globed. Required a Reinstall to update.",
             "env_variable": "VERSION",
             "default_value": "1.0.5",
             "user_viewable": true,
@@ -50,7 +50,7 @@
         },
         {
             "name": "Globed IP Address",
-            "description": "Globed Game Server IP Address. Should be the same or similar to your assigned allocated IP.",
+            "description": "Globed Game Server IP Address. Should be the same or similar to your assigned allocated IP. Leave it as default to use the same IP.",
             "env_variable": "IP_ADDRESS",
             "default_value": "0.0.0.0",
             "user_viewable": true,
