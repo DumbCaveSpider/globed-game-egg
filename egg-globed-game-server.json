@@ -4,9 +4,9 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2024-02-12T01:51:01+08:00",
+    "exported_at": "2024-02-12T14:41:02+08:00",
     "name": "Globed Game Server",
-    "author": "pterodactyl@arcticwoof.xyz",
+    "author": "admin@arcticwoof.com",
     "description": null,
     "features": null,
     "docker_images": {
