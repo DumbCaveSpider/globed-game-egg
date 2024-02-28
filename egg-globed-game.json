@@ -4,9 +4,9 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2024-02-12T14:41:02+08:00",
-    "name": "Globed Game Server",
-    "author": "pterodactyl@arcticwoof.xyz",
+    "exported_at": "2024-02-28T11:51:22+08:00",
+    "name": "Globed Game",
+    "author": "admin@arcticwoof.com",
     "description": "Globed is an open-source, highly customizable multiplayer mod for Geometry Dash powered by Geode. (Game Server)",
     "features": null,
     "docker_images": {
@@ -22,7 +22,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\n\r\ncd \/mnt\/server\/",
+            "script": "#!\/bin\/bash\r\nchmod 777 *\r\nchmod +x *\r\n\r\ncd \/mnt\/server\/",
             "container": "quay.io\/arcticwoof\/globed-central:latest",
             "entrypoint": "bash"
         }
@@ -40,9 +40,9 @@
         },
         {
             "name": "Globed Version",
-            "description": "The version of Globed. Required a Reinstall to update.",
+            "description": "The version of Globed. Required a Reinstall to update. Change this value in every update.",
             "env_variable": "VERSION",
-            "default_value": "1.2.0",
+            "default_value": "1.2.5",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|string|max:20",
