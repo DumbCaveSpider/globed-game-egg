@@ -5,7 +5,7 @@ It's easy to use and can create servers in an instant.
 > **This is the egg for the Globed Game Server, if you need the Game Central Server egg. [Click here](https://github.com/DumbCaveSpider/globed-central-egg)**
 
 ## Usage
-Download [egg-globed-game-server.json](https://github.com/DumbCaveSpider/globed-game-egg/blob/main/egg-globed-game-server.json) and export it into your Pterodactyl Panel in the Nest Section.
+Download [egg-globed-game.json](https://github.com/DumbCaveSpider/globed-game-egg/blob/main/egg-globed-game.json) and export it into your Pterodactyl Panel in the Nest Section.
 
 ## Resources
 > [Globed](https://github.com/dankmeme01/globed2)
