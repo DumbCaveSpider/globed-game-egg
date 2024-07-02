@@ -1,0 +1,92 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2024-07-03T01:13:26+08:00",
+    "name": "Globed Game Server",
+    "author": "pterodactyl@arcticwoof.xyz",
+    "description": null,
+    "features": null,
+    "docker_images": {
+        "quay.io\/arcticwoof\/globed-game:latest": "quay.io\/arcticwoof\/globed-game:latest"
+    },
+    "file_denylist": [],
+    "startup": ".\/{{GLOBED_FILE}} {{IP_ADDRESS}}:{{IP_PORT}} {{CENTRAL_ADDRESS}} {{PASSWORD}}",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": [\r\n        \"Server launched on \"\r\n    ]\r\n}",
+        "logs": "{}",
+        "stop": "^^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\n\r\ncd \/mnt\/server\/",
+            "container": "quay.io\/arcticwoof\/globed-central:latest",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Globed File",
+            "description": "The file name for Globed Game Server",
+            "env_variable": "GLOBED_FILE",
+            "default_value": "globed-game-server-x64",
+            "user_viewable": true,
+            "user_editable": false,
+            "rules": "required|string",
+            "field_type": "text"
+        },
+        {
+            "name": "Globed Version",
+            "description": "The version of Globed. Required a Reinstall to update.",
+            "env_variable": "VERSION",
+            "default_value": "1.4.0",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "Globed IP Address",
+            "description": "Globed Game Server IP Address. Should be the same or similar to your assigned allocated IP. Leave it as default to use the same IP.",
+            "env_variable": "IP_ADDRESS",
+            "default_value": "0.0.0.0",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:15",
+            "field_type": "text"
+        },
+        {
+            "name": "Globed Port",
+            "description": "Globed Game Server Port. Default is 41001",
+            "env_variable": "IP_PORT",
+            "default_value": "41001",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:20",
+            "field_type": "text"
+        },
+        {
+            "name": "Globed Central Address",
+            "description": "Globed Central Address. Must include http:\/\/ or https:\/\/ on the value.",
+            "env_variable": "CENTRAL_ADDRESS",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|url",
+            "field_type": "text"
+        },
+        {
+            "name": "Central Server Password",
+            "description": "Password used to authenticate game servers",
+            "env_variable": "PASSWORD",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:20",
+            "field_type": "text"
+        }
+    ]
+}
