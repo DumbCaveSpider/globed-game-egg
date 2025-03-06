@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> Please use this updated version as this will be archived and no longer maintained. [Globed Pterodactyl Egg](https://github.com/DumbCaveSpider/globed-pterodactyl-egg)
+
 # Globed Game Server Pterodactyl Egg
 Globed is an open-source created by dankmeme01, highly customizable multiplayer mod for Geometry Dash. This is used for Pterodactyl Panel.
 It's easy to use and can create servers in an instant.
